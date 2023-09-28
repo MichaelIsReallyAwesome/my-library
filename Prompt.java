@@ -46,7 +46,15 @@ public class Prompt
 	 */
 	public static char getChar (String ask)
 	{
-		return ' ';
+		System.out.print(ask + " -> ");
+		char input = "";
+		try {
+			input = bufReader.readLine().charAt(0);
+		}
+		catch(IOException e) {
+			System.err.println("ERROR: BufferedReader could not read line.");
+		}
+		return input;
 	}
 	
 	/**
