@@ -34,7 +34,7 @@ public class Prompt
 			input = bufReader.readLine();
 		}
 		catch(IOException e) {
-			System.err.println("ERROR: BufferedREader could not read line.");
+			System.err.println("ERROR: BufferedReader could not read line.");
 		}
 		return input;
 	}
